@@ -1,0 +1,604 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background: rgba(35, 45, 57, 0.8);
+}
+
+.videob{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.videob video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mobileheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    h1{
+        cursor: pointer;
+        font-weight: 900;
+    }
+}
+
+.mobileheader span{
+    color: #ed563b;
+}
+
+.mobileheader i{
+    font-size: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.mobileheader i:hover{color: #ed563b;}
+
+.mobileheader{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.videotext{
+    padding-top: 100px ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    text-align: center;
+    span{
+        color: #ed563b;
+    }
+}
+
+.videotext h1{
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.videotext button{
+    padding: 12px 20px;
+    background: #ed563b;
+    color: #fff;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.videotext button:hover{opacity: 0.8;}
+
+.pcheader{
+    display: none;
+}
+
+.about{
+    padding-top: 100px;
+    text-align: center;
+    p{max-width: 480px; margin: auto;}
+}
+.about i{
+    color: #ed563b;
+}
+.abouttxt *{
+    padding: 10px 0;
+
+}
+.cards{
+    padding: 50px 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.card p a{
+    color: #007bff;
+    
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    max-width: 500px;
+    gap: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    p{
+        font-size: 14px;
+    }
+    a{text-decoration: none; font-size: 14px}
+}
+.card a{
+    color: #ed563b;
+}
+.card *{
+    padding: 6px 4px;
+    
+}
+
+.card:hover{transform: scale(1.05);}
+
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+    background: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg);
+}
+
+.section1txt{
+    color: white;
+    max-width: 650px;
+    text-align: center;
+    h1{
+        text-transform: uppercase;
+        font-size: 2em;
+        font-weight: 900;
+    }
+    span{
+        color: #ed563b;
+    }
+    p{
+        padding: 20px 0;
+    }
+}
+
+.section1txt button{
+    padding: 12px 20px;
+    background: #ed563b;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.section1txt button:hover{opacity: 0.8;}
+
+.section2 {
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section2txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 600px;
+    text-align: center;
+}
+.section2txt i {
+    color: #ed563b;
+}
+.section2txt span {
+    color: #ed563b;
+}
+.section2txt * {
+    padding: 10px 0;
+}
+
+.scards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 40px;
+}
+.scards i {
+    color: #ed563b;
+    font-size: 25px;
+}
+
+.scards .card {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 20px 20px;
+    box-shadow: 0 0 10px grey;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.scards .card:hover{transform: scale(1.05);}
+
+.scards button {
+    padding: 20px;
+    border: none;
+    background: #ed563b;
+    color: #fff;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.scards button:hover{opacity: 0.7;}
+
+.sectionright {
+    padding: 20px 30px;
+}
+.sectionright * {
+    padding: 10px 0;
+}
+.sectionright button {
+    padding: 12px 20px;
+    border: none;
+    background: #ed563b;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sectionright button:hover{opacity: 0.7;}
+
+.simg {
+    display: flex;
+    justify-content: center;
+}
+.simg img {
+    padding: 0;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.section3{
+    padding: 40px 30px;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg);
+}
+.section3 span , .section3 i{color: #ed563b;}
+.section2 h1{font-weight: 900;}
+.section3 h1{font-weight: 900;}
+.section3txt{
+    text-align: center;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;   
+    max-width: 600px;
+}
+
+.section3txt h4{padding: 30px 0;}
+
+.section3txt *{
+    padding: 10px;
+}
+
+.section3txt span{
+    color: #fff;
+    transition: 0.3s;
+}
+
+.section3txt span:hover{
+    cursor: pointer;
+    color: #ed563b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+}
+
+table tr td {
+    border: 1px solid #fff;
+    padding: 6px 10px;
+    text-align: center;
+    max-width: 150px;
+    height: 80px;
+}
+
+.section4{
+    padding: 100px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section4txt{
+    display: flex;
+    color: black;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    max-width: 600px;
+}
+
+.section4txt *{padding: 10px 0;}
+.section4txt span, .section4txt i{color: #ed563b;}
+
+.section4txt h1{font-weight: 900;}
+
+.cards4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.card4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left; 
+    padding: 10px;
+    max-width: 350px;
+    height: 400px;
+    box-shadow: 0 0 10px grey;
+    border-radius: 10px;
+    border: none;
+    transition: 0.5s;
+}
+
+.card4:hover{transform: scale(0.95);}
+
+.cardtext{
+    padding: 0 20px;
+    p{
+        font-size: 14px;
+        color: grey;
+    }
+    h5{
+        color: #ed563b;
+    }
+}
+
+.cardtext *{
+    padding: 5px 0;
+}
+
+.card4 .social{
+    color: #007bff;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 5px 20px;
+    i{
+        cursor: pointer;
+    }
+}
+
+.section5{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.iframe{
+    width: 100%;
+    height: 400px;
+}
+
+.iframe iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.form{
+    width: 100%;
+    background: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.form form{
+    background: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formrow{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form input, .form textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form textarea{
+    height: 120px;
+}
+
+.form button{
+    font-size: 12px;
+    width: 150px;
+    padding: 12px 16px;
+    background-color: #ed563b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form button:hover{opacity: 0.7;}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 40px;
+}
+
+footer span{color: #ed563b;}
+
+@media only screen and (min-width:768px){
+    .pcheader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 50px;
+        background: rgba(0, 0, 0, 0.8);
+        h1{
+            cursor: pointer;
+            font-weight: 900;
+        }
+    }
+
+    .pcheader span{
+        color: #ed563b;
+    }
+
+    .pcheader menu{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .pcheader menu a{
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        transition: 0.3s;
+    }
+
+    .pcheader menu a:hover{color: #ed563b;}
+
+    .pcheader menu button{
+        width: 80px;
+        height: 40px;
+        border: none;
+        color: #fff;
+        background: #ed563b;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .pcheader menu button:hover{opacity: 0.7;}
+
+    .videotext{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 600px;
+        text-align: center;
+        span{
+            color: #ed563b;
+        }
+    }
+
+    .pcheader{
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+    }
+
+    .mobileheader{
+        display: none;
+    }
+
+    .section2 {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section2txt {
+        text-align: center;
+        max-width: 600px;
+    }
+
+    .section2blok {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .sectionleft {
+        flex: 0 0 32%;
+    }
+
+    .scards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .scards .card {
+        width: 100%;
+    }
+
+    .simg img {
+        width: 100%;
+        padding: 0;
+        border-radius: 10px;
+    }
+    
+    .section5{
+        flex-direction: row;
+        height: 600px;
+    }
+
+    .iframe{
+        width: 50%;
+        height: 100%;
+    }
+
+    .form{
+        width: 50%;
+        height: 100%;
+    }
+
+    .formrow{
+        flex-direction: row;
+    }
+}
