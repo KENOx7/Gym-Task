@@ -145,7 +145,7 @@ header{
     
 }
 
-.card:hover{transform: scale(0.9);}
+.card:hover{transform: scale(0.95);}
 
 .section1{
     display: flex;
@@ -602,5 +602,6 @@ footer span{color: #ed563b;}
         flex-direction: row;
     }
 }
+
 
 
